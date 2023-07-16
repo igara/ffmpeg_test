@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: './'
+  assetPrefix: './',
+  basePath: './',
+  trailingSlash: true,
+  publicRuntimeConfig: {
+    urlPrefix: './',
+  },  
 }
 
 module.exports = nextConfig
