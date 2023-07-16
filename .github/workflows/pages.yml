@@ -38,7 +38,7 @@ jobs:
         with:
           version: 7
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
       - name: export
         run: pnpm crun build
       - name: Upload artifact
