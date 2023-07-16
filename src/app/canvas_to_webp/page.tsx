@@ -118,19 +118,16 @@ export default function CanvasToWebp() {
     const clockCanvasElement = clockCanvasRef.current;
 
     let counter = 0
-    console.log('record')
     const ms = new MediaStream();
     ms.addTrack(clockCanvasElement.captureStream().getTracks()[0]);
     const recorder = new MediaRecorder(ms);
 
     const rec: { data: Array<Blob>; type: string } = { data: [], type: "" };
     recorder.ondataavailable = (e) => {
-      console.log('record ooo')
       rec.type = e.data.type;
       rec.data.push(e.data);
     };
     recorder.onstop = () => {
-      console.log("onstop");
       const blob = new Blob(rec.data, { type: rec.type });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
