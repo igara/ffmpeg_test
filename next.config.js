@@ -1,14 +1,13 @@
 const isProd = process.env.NODE_ENV === 'production'
-const prefixPath = !isProd ? '/ffmpeg_test' : ''
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: prefixPath,
-  basePath: prefixPath,
+  assetPrefix: isProd ? "/ffmpeg_test'" : undefined,
+  basePath: isProd ? "/ffmpeg_test'" : undefined,,
   trailingSlash: true,
   publicRuntimeConfig: {
-    urlPrefix: prefixPath
+    urlPrefix: isProd ? "/ffmpeg_test'" : undefined,
   },  
 }
 
