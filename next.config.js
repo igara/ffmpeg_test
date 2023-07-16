@@ -2,11 +2,7 @@
 const nextConfig = {
   output: 'export',
   assetPrefix: './',
-  basePath: './',
-  trailingSlash: true,
-  publicRuntimeConfig: {
-    urlPrefix: './',
-  },  
+  trailingSlash: true
 }
 
 module.exports = nextConfig
