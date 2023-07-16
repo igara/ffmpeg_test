@@ -14,6 +14,11 @@ export default function Home() {
             canvasをwebpに
           </Link>
         </li>
+        <li>
+          <Link href="speech_to_text">
+            会話の字幕補助
+          </Link>
+        </li>
       </ul>
     </main>
   )
