@@ -10,12 +10,12 @@ export default function Home() {
       
       <ul className={styles.list}>
         <li>
-          <Link href="canvas_to_webp">
+          <Link href="/canvas_to_webp">
             canvasをwebpに
           </Link>
         </li>
         <li>
-          <Link href="speech_to_text">
+          <Link href="/speech_to_text">
             会話の字幕補助
           </Link>
         </li>

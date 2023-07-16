@@ -38,6 +38,9 @@ dependencies:
   react-speech-recognition:
     specifier: ^3.10.0
     version: 3.10.0(react@18.2.0)
+  regenerator-runtime:
+    specifier: ^0.13.11
+    version: 0.13.11
   typescript:
     specifier: 5.1.6
     version: 5.1.6
