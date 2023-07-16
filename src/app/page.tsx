@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <h1>
-        ffmpeg.wasmで遊ぶ
+        canvasで遊ぶ
       </h1>
       
       <ul className={styles.list}>
